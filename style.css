@@ -124,7 +124,7 @@ html,body{
     font-size: 11px;
     font-weight: 600;
     padding: 15px 18px;
-    background-color: black;
+    background-color: #000;
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -132,5 +132,36 @@ html,body{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    transition: all linear 0.5s;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+
+#content button::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0);
+    border-radius: 50%;
+    z-index: -1;
+    transition: all linear 0.5s;
+}
+
+
+#content button:hover:after{
+    transform: translate(-50%,-50%)scale(3);
+}
+
+#content button:hover{
+    color: #000;
+}
+
+#content button:active::after{
+    background-color: rgb(252, 133, 202);
 }
 
