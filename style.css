@@ -16,9 +16,16 @@ html,body{
 }
 
 
-#page1{
+#main{
     width: 100%;
     height: 100%;
+    /* background-color: red; */
+}
+
+
+#page1{
+    width: 100%;
+    height: fit-content;
     /* background-color: red; */
 }
 
@@ -129,6 +136,7 @@ html,body{
     border: none;
     border-radius: 50px;
     margin: 2vw 0vw;
+    /* margin-bottom: 4vw; */
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -163,5 +171,72 @@ html,body{
 
 #content button:active::after{
     background-color: rgb(252, 133, 202);
+}
+
+
+#bottom{
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    padding: 5px;
+    width: 100%;
+    height: 250px;
+    background-color: rebeccapurple;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#bottom .container{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    /* border: 2px solid black; */
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.elem{
+    display: inline-block;
+    width: 15%;
+    height: 100%;
+    /* background-color: black; */
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.elem video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 24px));
+    }
+}
+
+
+#page2{
+    width: 100%;
+    height: 100%;
+    /* background-color: pink; */
 }
 
