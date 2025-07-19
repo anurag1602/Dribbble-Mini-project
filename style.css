@@ -773,7 +773,7 @@ html,body{
     }
 
     .box{
-        margin: 10px 37px;
+        margin: 10px 35px;
         /* background-color: red; */
     }
 
@@ -826,8 +826,8 @@ html,body{
 
 
     #button-container button{
-        font-size: 9px;
-        padding: 10px 11px;
+        font-size: 8px;
+        padding: 10px 10px;
         margin: 0.1vw;
     }
 
