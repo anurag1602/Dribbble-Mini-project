@@ -169,7 +169,7 @@ html,body{
 }
 
 #content button:active::after{
-    background-color: rgb(252, 133, 202);
+    background-color: pink;
 }
 
 
